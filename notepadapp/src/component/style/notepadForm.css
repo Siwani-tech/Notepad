@@ -1,0 +1,110 @@
+
+*{
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;1,300&family=Merienda:wght@300&family=Nanum+Brush+Script&family=Raleway:wght@300;500&display=swap');
+}
+
+/* body{
+  font-family: 'Comic Neue', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Nanum Brush Script', cursive;
+
+} */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Merienda', cursive;
+  padding: 12px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  background-color: rgb(255, 137, 176);
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.addNote {
+  margin-top: 4px;
+  background-color: #e0ee20;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addNote:hover {
+  background-color: #f32f80;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.notes-list ul li {
+  font-family: 'Merienda', cursive;
+  font-size: 24px;
+  background-color: rgb(142, 68, 240);
+  border-radius: 8px;
+  box-shadow: 3px 8px rgb(245, 166, 245);
+  border: 2px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: rotate(-5deg);
+  margin: 10px 0;
+}
+
+.notes-list ul li:nth-child(odd) {
+  background-color: aqua;
+  transform: rotate(5deg);
+}
+
+.deleteNote {
+  background-color: #201f1f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.deleteNote:hover {
+  background-color: #c4bebe;
+}
